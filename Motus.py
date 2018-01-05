@@ -15,7 +15,6 @@ def menu():
             print("\t Les lettres bien placée sont écrites en MAJUSCULES.")
             print("\tLes lettres mal placée sont écrites en minuscules.")
             print("\tLes autres sont remplacées par des points.\n")
-
         elif choice == 4:
             quitter = False
         else:
@@ -48,15 +47,12 @@ def game(word):
         return True
     else:
         for i in range(7):
-            print("[+] {} : {} \t|\t {} : {}".format(player[i], word.find(player[i]), word[i], player.find(word[i])))
             if player.find(word[i]) != -1:
                 if player[i] == word[i]:
                     reponse[i] = word[i]
                 else:
                     reponse[player.find(word[i])] = word[i].lower()
-        print("".join(reponse))
         for i in range(7):
-            print("[+] {} : {} \t|\t {} : {}".format(player[i], word.find(player[i]), word[i], player.find(word[i])))
             if word.find(player[i]) != -1:
                 if player[i] == word[i]:
                     reponse[i] = word[i]
