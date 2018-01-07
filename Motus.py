@@ -1,5 +1,4 @@
 #coding : utf-8
-import unidecode
 def menu():
     quitter = True
     while quitter:
